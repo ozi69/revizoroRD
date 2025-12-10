@@ -1,0 +1,126 @@
+.section-five {
+  .section-five__head {
+    display: flex;
+    align-items: end;
+    gap: 21rem;
+
+    @media (max-width: 767px) {
+      flex-direction: column;
+      align-items: unset;
+      gap: 2rem;
+    }
+
+    h3 {
+      text-transform: uppercase;
+    }
+
+    p {
+      width: 20rem;
+      text-transform: uppercase;
+    }
+  }
+  .sectio-five__container {
+    margin-top: 5rem;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+
+    @media (max-width: 767px) {
+      margin-top: 4rem;
+
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+  .section-five__container-block {
+    border-radius: 2rem;
+    padding: 3rem;
+    color: var(--white);
+    height: 42.4rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    position: relative;
+
+    @media (max-width: 767px) {
+      padding: 2rem;
+    }
+
+    &:nth-child(1) {
+      background-color: var(--dark-gray);
+
+      @media (max-width: 767px) {
+        .five__container-number {
+          top: 40%;
+        }
+      }
+    }
+    &:nth-child(2) {
+      background-color: var(--blue);
+
+      @media (max-width: 767px) {
+        .five__container-number {
+          top: 40%;
+        }
+      }
+    }
+    &:nth-child(3) {
+      background-color: var(--light-gray);
+    }
+    &:nth-child(4) {
+      background-color: var(--dark-gray);
+    }
+
+    h2 {
+      text-transform: uppercase;
+    }
+  }
+  .five__container-number {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .five__container-down {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+
+    @media (max-width: 767px) {
+      flex-direction: column;
+      align-items: unsafe;
+      gap: 2rem;
+    }
+
+    p {
+      max-width: 40rem;
+    }
+
+    a {
+      width: 26.2rem;
+      height: 6.2rem;
+
+      @media (max-width: 767px) {
+        width: 100%;
+
+        height: 5rem;
+      }
+
+      p {
+        display: flex;
+        align-items: end;
+
+        margin: 1.2rem;
+      }
+
+      span {
+        margin: 1.2rem;
+      }
+    }
+  }
+  .five__container-down__alt {
+    max-width: 40rem;
+  }
+}

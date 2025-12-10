@@ -1,0 +1,29 @@
+.section-twenty__six {
+  .twenty-six__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;
+
+    @media (max-width: 767px) {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 2rem;
+    }
+  }
+  .twenty-six__img {
+  }
+  .twenty-six__block {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    hgroup {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+
+      h3 {
+        text-transform: uppercase;
+      }
+    }
+  }
+}

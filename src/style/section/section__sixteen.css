@@ -1,0 +1,84 @@
+.section-sixteen {
+  .section-sixteen__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+
+    @media (max-width: 767px) {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 2rem;
+    }
+  }
+  .sixteen-container__head {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+
+    width: 61rem;
+    text-transform: uppercase;
+
+    @media (max-width: 767px) {
+      width: unset;
+      gap: 1.6rem;
+    }
+  }
+  .sixteen-card {
+    padding: 3rem;
+    border-radius: 1.4rem;
+    background-color: var(--light-blue-gray);
+
+    display: flex;
+    align-items: end;
+    gap: 3rem;
+
+    @media (max-width: 767px) {
+      flex-direction: column;
+      align-items: unset;
+      gap: 1.6rem;
+
+      border-radius: 1rem;
+      padding: 1.6rem;
+    }
+  }
+  .sixteen-card__img {
+    min-width: 23.2rem;
+    width: 23.2rem;
+    height: 20.1rem;
+
+    @media (max-width: 767px) {
+      width: 31rem;
+      height: 24rem;
+    }
+
+    img {
+      border-radius: 1rem;
+      object-fit: cover;
+
+      @media (max-width: 767px) {
+        border-radius: 0.8rem;
+      }
+    }
+  }
+  .sixteen-card__content {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+  .card-nubmer {
+    opacity: 50%;
+
+    @media (max-width: 767px) {
+      display: none;
+    }
+  }
+  .content-text {
+  }
+
+  .nubmer-card__mobile {
+    display: none;
+
+    @media (max-width: 767px) {
+      display: block;
+    }
+  }
+}

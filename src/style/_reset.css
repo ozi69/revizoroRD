@@ -1,0 +1,125 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: unset;
+  text-transform: uppercase;
+  outline: unset;
+  cursor: pointer;
+}
+button {
+  font-family: "Roboto";
+  background-color: unset;
+  cursor: pointer;
+  text-transform: uppercase;
+  outline: unset;
+}
+input {
+  outline: unset;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+  height: 100%;
+  width: 100%;
+}
+
+span {
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+input[type="search"]::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+input[type="search"]::-ms-clear {
+  display: none;
+}
+
+.page {
+  flex: 1 1 auto;
+}
+
+html,
+body {
+  height: 100%;
+  line-height: 1;
+  background-color: var(--white);
+  color: var(--dark-gray);
+
+  font-family: "Roboto";
+  font-size: 0.5208335vw;
+
+  @media (max-width: 768px) {
+    font-size: 1.5625vw;
+    font-size: calc((100 / 375) * 10vw);
+  }
+}
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+._container {
+  padding: 9rem 4rem;
+  position: relative;
+
+  @media (max-width: 767px) {
+    padding: 4.5rem 1.6rem;
+  }
+}
+._container__alt {
+  padding: 9rem 0.8rem;
+  position: relative;
+
+  @media (max-width: 767px) {
+    padding: 4.5rem 1.6rem;
+  }
+}
+._container__alt-1 {
+  padding: 9rem 0 9rem 4rem;
+  position: relative;
+
+  @media (max-width: 767px) {
+    padding: 4.5rem 0 4.5rem 1.6rem;
+  }
+}
+._container__alt-2 {
+  padding: 5rem 4rem 0 4rem;
+  position: relative;
+
+  @media (max-width: 767px) {
+    padding: 4.5rem 1.6rem 0 1.6rem;
+  }
+}

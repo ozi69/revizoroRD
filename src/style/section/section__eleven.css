@@ -1,0 +1,21 @@
+.section-eleven {
+  .section-eleven__head {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+
+    background-color: var(--blue);
+    padding: 4rem;
+    border-radius: 2rem;
+    color: var(--white);
+
+    text-transform: uppercase;
+    text-align: center;
+
+    @media (max-width: 767px) {
+      padding: 2rem;
+    }
+  }
+}

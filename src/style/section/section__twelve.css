@@ -1,0 +1,125 @@
+.section-twelve {
+  .section-twelve__container {
+    padding: 4.5rem 4rem 12rem;
+    border-radius: 2rem;
+    background-color: var(--light-blue-gray);
+
+    @media (max-width: 767px) {
+      padding: 2rem 1.6rem;
+    }
+  }
+  .container__block-one {
+    display: flex;
+    gap: 3.2rem;
+
+    @media (max-width: 767px) {
+      display: none;
+    }
+
+    p {
+      padding: 2rem 0;
+      width: 100%;
+      color: var(--blue);
+      text-align: center;
+      border-radius: 1.2rem;
+      background-color: var(--white);
+      text-transform: uppercase;
+    }
+  }
+  .container-text {
+    text-align: center;
+    margin: 3rem 0 7rem;
+    padding: 2rem;
+    border-radius: 1.2rem;
+    background-color: var(--dark-gray);
+
+    color: var(--white);
+    text-transform: uppercase;
+
+    @media (max-width: 767px) {
+      padding: 1.6rem;
+
+      margin: unset;
+    }
+  }
+  .container__block-two {
+    div {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+
+      border-bottom: 0.1rem solid #b5b5c199;
+
+      @media (max-width: 767px) {
+        display: flex;
+        justify-content: space-between;
+
+        padding: 3rem 0;
+      }
+      &:nth-child(3) {
+        border-bottom: none;
+
+        @media (max-width: 767px) {
+          border-bottom: 0.1rem solid #b5b5c199;
+        }
+      }
+      &:nth-child(4) {
+        border-bottom: none;
+
+        @media (max-width: 767px) {
+          padding-bottom: unset;
+        }
+      }
+
+      p {
+        align-content: center;
+        text-transform: uppercase;
+
+        @media (max-width: 767px) {
+          font-size: 1.2rem;
+        }
+      }
+
+      p:first-child {
+        min-height: 10rem;
+        border-right: 0.1rem solid #b5b5c199;
+        font-weight: 500;
+
+        @media (max-width: 767px) {
+          border: unset;
+          width: 21rem;
+
+          min-height: unset;
+        }
+      }
+
+      p:last-child {
+        align-self: center;
+        justify-self: end;
+
+        height: fit-content;
+        margin-right: 23rem;
+        padding: 1rem 2rem;
+
+        background-color: var(--white);
+        border-radius: 1.2rem;
+
+        max-width: 32rem;
+
+        font-weight: 600;
+
+        @media (max-width: 767px) {
+          margin: unset;
+
+          padding: 0.8rem;
+          border-radius: 0.8rem;
+        }
+      }
+
+      .text-fix {
+        @media (max-width: 767px) {
+          width: 22rem;
+        }
+      }
+    }
+  }
+}

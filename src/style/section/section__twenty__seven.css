@@ -1,0 +1,124 @@
+.section-twenty__seven {
+  .twenty-seven__head {
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: 767px) {
+      flex-direction: column;
+
+      gap: 2rem;
+    }
+
+    h2 {
+      text-transform: uppercase;
+    }
+
+    a {
+      height: 6.2rem;
+      width: 26.2rem;
+
+      color: var(--white);
+
+      @media (max-width: 767px) {
+        height: 5rem;
+        width: 100%;
+      }
+
+      p {
+        display: flex;
+        align-items: end;
+
+        margin: 0 0 1.2rem 1.2rem;
+      }
+    }
+
+    span {
+      margin: 1.2rem 1.2rem 0 0;
+
+      width: 1.6rem;
+      height: 1.6rem;
+    }
+  }
+  .twenty-seven__container {
+    margin-top: 12rem;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3rem;
+
+    @media (max-width: 767px) {
+      margin-top: 4rem;
+
+      grid-template-columns: repeat(1, 1fr);
+      gap: 2rem;
+    }
+
+    .section-twenty_seven__card {
+      border-radius: 2rem;
+      background-color: var(--light-blue-gray);
+      padding: 3rem;
+
+      width: 43.8rem;
+      height: 41rem;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      @media (max-width: 767px) {
+        width: 100%;
+        height: 25.6rem;
+        padding: 2rem;
+      }
+    }
+    .section-twenty_seven__card-head {
+      display: flex;
+      justify-content: space-between;
+
+      p {
+        span {
+        }
+      }
+
+      a {
+        width: 5.2rem;
+        height: 6.2rem;
+
+        display: flex;
+        justify-content: end;
+        align-items: end;
+
+        span {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          margin: 0 0.8rem 1.2rem 0;
+        }
+      }
+    }
+    .section-twenty_four__seven-content {
+      display: flex;
+      flex-direction: column;
+      gap: 1.6rem;
+
+      p {
+        text-transform: uppercase;
+      }
+
+      h3 {
+        text-transform: uppercase;
+      }
+    }
+    .section-twenty_seven__card-date {
+      display: flex;
+      gap: 0.4rem;
+
+      color: var(--light-gray);
+
+      span {
+        color: var(--dark-gray);
+      }
+    }
+  }
+}

@@ -1,0 +1,45 @@
+.section-thirteen {
+  .section-thirteen__core {
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: 767px) {
+      flex-direction: column;
+      gap: 2rem;
+    }
+  }
+
+  h2 {
+    width: 60rem;
+    text-transform: uppercase;
+  }
+
+  .section-thirteen__container {
+    border-radius: 2rem;
+    padding: 3rem;
+    background-color: var(--dark-gray);
+
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    @media (max-width: 767px) {
+      padding: 1.6rem;
+      border-radius: 1.6rem;
+    }
+
+    p {
+      display: flex;
+      gap: 2.4rem;
+      color: var(--white);
+
+      span {
+        width: 1.6rem;
+        height: 1.6rem;
+
+        min-width: 1.6rem;
+        min-height: 1.6rem;
+      }
+    }
+  }
+}

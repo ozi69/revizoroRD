@@ -1,0 +1,165 @@
+.preloader__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+.preloader-img {
+  width: 38.5rem;
+  height: 7rem;
+}
+.preloader-text {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.preloader {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(94, 94, 101, 1); /* серый фон */
+  inset: 0;
+  overflow: hidden;
+}
+
+.preloader.active {
+  animation: preloaderHide 0.5s ease forwards;
+}
+
+/* Прелоадер скрываем */
+@keyframes preloaderHide {
+  to {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+}
+
+/* Белый фон */
+.preloader-white {
+  position: absolute;
+  inset: 0;
+  background: #fff;
+  transform: translateY(100%);
+}
+
+.preloader-white.active {
+  animation: whiteUp 0.8s ease forwards;
+  animation-delay: 0.2s;
+}
+
+@keyframes whiteUp {
+  to {
+    transform: translateY(0);
+  }
+}
+
+/* Синий фон */
+.preloader-blue {
+  position: absolute;
+  inset: 0;
+  background: rgba(64, 194, 246, 1);
+  transform: translateY(100%);
+}
+
+.preloader-blue.active {
+  animation: blueUp 0.8s ease forwards;
+}
+
+/* Синий фон */
+@keyframes blueUp {
+  to {
+    transform: translateY(0);
+  }
+}
+
+/* Контейнер */
+.preloader__container {
+  position: relative;
+  z-index: 5;
+
+  overflow: hidden;
+  height: 13.2rem;
+}
+
+/* Картинка внутри прелоадера */
+.preloader-img {
+  transform: translateY(-150%);
+}
+
+.preloader-img.active {
+  animation: imgDown 0.6s ease forwards;
+}
+
+/* Картинка сверху вниз */
+@keyframes imgDown {
+  to {
+    transform: translateY(0);
+  }
+}
+
+/* Текст */
+.preloader-text {
+  transform: translateY(150%);
+}
+
+.preloader-text.active {
+  animation: textUp 0.6s ease forwards;
+}
+
+/* Текст снизу вверх */
+@keyframes textUp {
+  to {
+    transform: translateY(0);
+  }
+}
+
+/* Картинка прелоадера под синий фон */
+.preloader-img.hide-under-blue {
+  animation: imgHideBlue 0.6s ease forwards;
+}
+
+/* Текст прелоадера под синий фон */
+.preloader-text.hide-under-blue {
+  animation: textHideBlue 0.6s ease forwards;
+}
+
+/* Ключевые кадры */
+@keyframes imgHideBlue {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-150%); /* вверх */
+  }
+}
+
+@keyframes textHideBlue {
+  0% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(150%); /* вправо */
+  }
+}
+
+/* Когда прелоадер завершил анимацию — применяем нормальные стили */
+.main-topic__img img {
+  border-radius: 0;
+  padding: 0;
+  transition: all 0.6s ease;
+}
+.main-topic__img.ready img {
+  border-radius: 2rem;
+  padding: 0.8rem 0.8rem 0;
+
+  @media (max-width: 767px) {
+    padding: unset;
+  }
+}

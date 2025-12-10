@@ -1,0 +1,234 @@
+.section-faq {
+  h1 {
+    text-transform: uppercase;
+    text-align: center;
+
+    padding: 4rem;
+    border-radius: 2rem;
+    background-color: var(--blue);
+    color: var(--white);
+
+    @media (max-width: 767px) {
+      border-radius: 1.6rem;
+      padding: 2rem 1rem;
+    }
+  }
+
+  .section-faq__container {
+    margin-top: 5rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+
+    @media (max-width: 767px) {
+      margin-top: 4rem;
+
+      gap: 2rem;
+    }
+  }
+
+  .block-faq {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+
+    padding: 4rem;
+    border-radius: 2rem;
+    background-color: var(--light-blue-gray);
+
+    @media (max-width: 767px) {
+      flex-direction: column;
+      gap: 1.6rem;
+
+      padding: 1rem;
+      border-radius: 1.4rem;
+    }
+
+    h2 {
+      width: 75rem;
+
+      text-transform: uppercase;
+    }
+  }
+
+  .block-faq__core {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    @media (max-width: 767px) {
+      gap: 1rem;
+    }
+  }
+
+  /* accordion */
+
+  details summary {
+    list-style: none;
+    cursor: pointer;
+    padding: 0 3rem;
+    min-height: 9rem;
+    width: 96rem;
+    background-color: var(--dark-gray);
+
+    position: relative;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    color: var(--white);
+    transition: 0.3s ease;
+
+    @media (max-width: 767px) {
+      width: 100%;
+      min-height: unset;
+
+      padding: 1.4rem 1.4rem;
+    }
+
+    &:hover {
+      background-color: var(--light-gray);
+    }
+  }
+  .icon-box_summary {
+  }
+  .first-summary {
+    border-radius: 2rem;
+
+    @media (max-width: 767px) {
+      border-radius: 1.4rem;
+    }
+  }
+
+  details summary::-webkit-details-marker {
+    display: none;
+  }
+
+  .accordion {
+  }
+
+  .accordion_details {
+  }
+  .accordion_details-last[open] {
+    background-color: white;
+  }
+
+  .accordion_details[open] {
+    .first-summary {
+      background-color: var(--light-gray);
+      border-radius: 2rem 2rem 0 0;
+
+      @media (max-width: 767px) {
+        border-radius: 1.4rem 1.4rem 0 0;
+      }
+    }
+
+    .icon-box_summary {
+      svg {
+        transform: rotate(-180deg);
+      }
+    }
+  }
+  .icon-box_summary svg {
+    transform: rotate(0);
+    transform-origin: center;
+    transition: transform 0.3s;
+  }
+
+  .accordion_details[open] + .accordion_contnent {
+    grid-template-rows: 1fr;
+    background-color: var(--light-gray);
+  }
+  .accordion_title {
+    display: inline;
+
+    width: 80rem;
+    padding: 3rem 0;
+    text-transform: uppercase;
+
+    @media (max-width: 767px) {
+      width: 25rem;
+      padding: unset;
+    }
+  }
+
+  .accordion_contnent {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition-duration: 0.3s;
+
+    width: 96rem;
+    border-radius: 0 0 2rem 2rem;
+
+    position: relative;
+    top: -0.1rem;
+
+    @media (max-width: 767px) {
+      width: 100%;
+
+      @media (max-width: 767px) {
+        border-radius: 0 0 1.4rem 1.4rem;
+      }
+    }
+  }
+
+  .accordion_content-body {
+    overflow: hidden;
+    color: var(--white);
+
+    p {
+      padding: 1rem 3rem 3rem;
+
+      @media (max-width: 767px) {
+        padding: 0.5rem 1.4rem 1.4rem;
+      }
+    }
+  }
+
+  /* block-faq__alt */
+
+  .block-faq__alt {
+    background-color: var(--light-gray);
+
+    h2 {
+      color: var(--white);
+    }
+
+    details summary {
+      &:hover {
+        background-color: var(--light-blue-gray);
+
+        color: var(--dark-gray);
+
+        path {
+          stroke: var(--dark-gray);
+        }
+      }
+    }
+
+    .accordion_details[open] {
+      .first-summary {
+        background-color: var(--light-blue-gray);
+
+        color: var(--dark-gray);
+      }
+
+      path {
+        stroke: var(--dark-gray);
+      }
+    }
+
+    .accordion_details[open] + .accordion_contnent {
+      grid-template-rows: 1fr;
+      background-color: var(--light-blue-gray);
+
+      .accordion_content-body {
+        p {
+          color: var(--dark-gray);
+        }
+      }
+    }
+  }
+}

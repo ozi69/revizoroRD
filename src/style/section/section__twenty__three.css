@@ -1,0 +1,20 @@
+.section-twenty__three {
+  ._container {
+    padding-bottom: unset;
+  }
+
+  h1 {
+    border-radius: 2rem;
+    background-color: var(--light-gray);
+    color: var(--white);
+    padding-block: 4rem;
+
+    text-align: center;
+    text-transform: uppercase;
+
+    @media (max-width: 767px) {
+      padding-block: 2rem;
+      border-radius: 1.6rem;
+    }
+  }
+}

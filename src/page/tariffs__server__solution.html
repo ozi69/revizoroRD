@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Тарифы - Серверное решение</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- SEO-Parameters -->
+  <meta name="keywords" content="ключевые слова">
+  <meta name="description" content="описание">
+
+  <!--  Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="путь к иконке">
+</head>
+<body class="body__sec">
+  <div class="wrapper">
+      <header class="header__sec">
+        <div class="block_select__city">
+          
+          <ul class="box_select__city-list">
+            <li class="item-city-val">
+              <button class="item-city__btn btn-fun header-text">
+                Москва и МО
+  
+                <span class="arrow__btn--header">
+                  <svg width="1.6rem" height="1.6rem" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M2 5L8 11L14 5" stroke="#5E5E65" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </span>
+              </button>
+  
+              <ul class="city-list__select">
+                <li class="item-city header-text__3 select-city-item">
+                  <a href="src/page/tariffs__cloud.html">
+                    Москва и МО
+                  </a>
+                </li>
+                <li class="item-city header-text__3 select-city-item">
+                  <a href="src/page/tariffs__except__moscow__and__moscow__region.html">
+                    Все регионы, кроме Москвы и МО
+                  </a>
+                </li>
+                <li class="item-city header-text__3 select-city-item">
+                  <a href="src/page/tariff__snt.html">
+                    СНТ
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+  
+        </div>
+        
+        <div class="block-header">
+          <nav class="header-nav">
+            <ul class="block-header__nav">
+              <li class="nav-item">
+                <button class="btn-fun header-text nav-btn">
+                  Решения 
+  
+                  <span class="arrow__btn--header">
+                    <svg width="1.6rem" height="1.6rem" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2 5L8 11L14 5" stroke="#5E5E65" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </span>
+                </button>
+  
+                <ul class="block-header__nav-list">
+                  <li class="header__nav-list__item header-text__3">
+                    <a href="">
+                      Ук и ТСЖ
+                    </a>
+                  </li>
+                  <li class="header__nav-list__item header-text__3">
+                    <a href="">
+                      Сервисные организации
+                    </a>
+                  </li>
+                  <li class="header__nav-list__item header-text__3">
+                    <a href="">
+                      СНТ
+                    </a>
+                  </li>
+                  <li class="header__nav-list__item header-text__3">
+                    <a href="">
+                      Ресурсоснабжающие компании
+                    </a>
+                  </li>
+                  <li class="header__nav-list__item header-text__3">
+                    <a href="">
+                      Учреждения министерства ЖКХ
+                    </a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item">
+                <button class="btn-fun header-text nav-btn">
+                  Тарифы
+  
+                  <span class="arrow__btn--header">
+                    <svg width="1.6rem" height="1.6rem" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2 5L8 11L14 5" stroke="#5E5E65" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </span>
+                </button>
+  
+                <ul class="block-header__nav-list">
+                  <li class="header__nav-list__item header-text__3">
+                    <a href="">
+                      Revizor cloud
+                    </a>
+                  </li>
+                  <li class="header__nav-list__item header-text__3">
+                    <a href="src/page/tariffs__server__solution.html">
+                      Revizor server
+                    </a>
+                  </li>
+                  <li class="header__nav-list__item header-text__3">
+                    <a href="">
+                      Монтаж и техобслуживание
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li><a href="src/page/equipment.html" class="header-text">Оборудование</a></li>
+            </ul>
+          </nav>
+
+          <div class="dislocation">
+            <a href="">
+              <svg width="2.4rem" height="2.4rem" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M14.25 10.5C14.25 9.90326 14.0129 9.33097 13.591 8.90901C13.169 8.48705 12.5967 8.25 12 8.25C11.4033 8.25 10.831 8.48705 10.409 8.90901C9.98705 9.33097 9.75 9.90326 9.75 10.5C9.75 11.0967 9.98705 11.669 10.409 12.091C10.831 12.5129 11.4033 12.75 12 12.75C12.5967 12.75 13.169 12.5129 13.591 12.091C14.0129 11.669 14.25 11.0967 14.25 10.5ZM21 10.5C21 14.811 16.3545 19.524 13.7385 21.837C13.2602 22.2642 12.6413 22.5003 12 22.5003C11.3587 22.5003 10.7398 22.2642 10.2615 21.837C7.6455 19.524 3 14.811 3 10.5C3 9.3181 3.23279 8.14778 3.68508 7.05585C4.13738 5.96392 4.80031 4.97177 5.63604 4.13604C6.47177 3.30031 7.46392 2.63738 8.55585 2.18508C9.64778 1.73279 10.8181 1.5 12 1.5C13.1819 1.5 14.3522 1.73279 15.4442 2.18508C16.5361 2.63738 17.5282 3.30031 18.364 4.13604C19.1997 4.97177 19.8626 5.96392 20.3149 7.05585C20.7672 8.14778 21 9.3181 21 10.5ZM19.5 10.5C19.5 8.51088 18.7098 6.60322 17.3033 5.1967C15.8968 3.79018 13.9891 3 12 3C10.0109 3 8.10322 3.79018 6.6967 5.1967C5.29018 6.60322 4.5 8.51088 4.5 10.5C4.5 12.162 5.4225 14.0925 6.855 16.0245C8.256 17.9115 9.9855 19.59 11.2545 20.7135C11.4587 20.8986 11.7244 21.0011 12 21.0011C12.2756 21.0011 12.5413 20.8986 12.7455 20.7135C14.0145 19.59 15.7455 17.913 17.145 16.0245C18.5775 14.0925 19.5 12.162 19.5 10.5Z" fill="white"/>
+              </svg>
+            </a>
+          </div>
+  
+          <div class="header-logo">
+            <a href="/index.html">
+              <img src="src/img/logo_2.svg" alt="">
+            </a>
+          </div>
+    
+          <div class="block-header__nav-two">
+            <nav class="header-nav__two">
+              <ul class="nav-list__two">
+                <li><a href="" class="list__two--item header-text">О системе</a></li>
+                <li><a href="" class="list__two--item header-text">Статьи</a></li>
+                <li><a href="" class="list__two--item header-text">Контакты</a></li>
+              </ul>
+            </nav>
+            <div class="header__number-tel">
+              <p class="number-tel">8 800 550 65 92</p>
+            </div>
+            <a class="header-link btn-def btn-four__effect" href="">Стать клиентом</a>
+          </div>
+          
+          <!-- burger-menu -->
+          
+          <div class="burger-menu">
+            <span class="burger-line"></span>
+            <span class="burger-line"></span>
+            <span class="burger-line"></span>
+          </div>
+        </div>
+
+        
+        <div class="mobile-menu">
+          <div class="head-block">
+            <a href="tel: 8 800 550 65 92">8 800 550 65 92</a>
+
+            <span class="close-icon">
+              <svg width="2.4rem" height="2.4rem" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M19.6456 4.36653C19.5333 4.25402 19.4 4.16477 19.2532 4.10387C19.1064 4.04297 18.949 4.01162 18.79 4.01162C18.6311 4.01162 18.4737 4.04297 18.3269 4.10387C18.1801 4.16477 18.0467 4.25402 17.9344 4.36653L12 10.2888L6.06555 4.35439C5.9532 4.24204 5.81981 4.15291 5.67301 4.0921C5.52621 4.0313 5.36887 4 5.20997 4C5.05108 4 4.89374 4.0313 4.74694 4.0921C4.60014 4.15291 4.46675 4.24204 4.35439 4.35439C4.24204 4.46675 4.15291 4.60014 4.0921 4.74694C4.0313 4.89374 4 5.05108 4 5.20997C4 5.36887 4.0313 5.52621 4.0921 5.67301C4.15291 5.81981 4.24204 5.9532 4.35439 6.06555L10.2888 12L4.35439 17.9344C4.24204 18.0468 4.15291 18.1802 4.0921 18.327C4.0313 18.4738 4 18.6311 4 18.79C4 18.9489 4.0313 19.1063 4.0921 19.2531C4.15291 19.3999 4.24204 19.5333 4.35439 19.6456C4.46675 19.758 4.60014 19.8471 4.74694 19.9079C4.89374 19.9687 5.05108 20 5.20997 20C5.36887 20 5.52621 19.9687 5.67301 19.9079C5.81981 19.8471 5.9532 19.758 6.06555 19.6456L12 13.7112L17.9344 19.6456C18.0468 19.758 18.1802 19.8471 18.327 19.9079C18.4738 19.9687 18.6311 20 18.79 20C18.9489 20 19.1063 19.9687 19.2531 19.9079C19.3999 19.8471 19.5333 19.758 19.6456 19.6456C19.758 19.5333 19.8471 19.3999 19.9079 19.2531C19.9687 19.1063 20 18.9489 20 18.79C20 18.6311 19.9687 18.4738 19.9079 18.327C19.8471 18.1802 19.758 18.0468 19.6456 17.9344L13.7112 12L19.6456 6.06555C20.1068 5.60439 20.1068 4.82769 19.6456 4.36653Z" fill="#5E5E65"/>
+              </svg>
+            </span>
+          </div>
+
+          <div class="middle-block">
+            <nav class="burger-menu__nav">
+              <ul class="burger-menu__nav-list">
+                <li class="burger__nav-list__item">
+                  <button class="btn-def burger-menu__nav-list__btn">
+                    Решения 
+  
+                    <span class="burger-arrow">
+                      <svg width="1.6rem" height="1.6rem" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M2 5L8 11L14 5" stroke="#5E5E65" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </span>
+                  </button>
+  
+                  <ul class="menu-list__dropdown">
+                    <li class="">
+                      <a href="" class="h3">
+                        Ук и ТСЖ
+                      </a>
+                    </li>
+                    <li class="">
+                      <a href="" class="h3">
+                        Сервисные организации
+                      </a>
+                    </li>
+                    <li class="">
+                      <a href="" class="h3">
+                        СНТ
+                      </a>
+                    </li>
+                    <li class="">
+                      <a href="" class="h3">
+                        Ресурсоснабжающие компании
+                      </a>
+                    </li>
+                    <li class="">
+                      <a href="" class="h3">
+                        Учреждения министерства ЖКХ
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+  
+                <li class="burger__nav-list__item">
+                  <button class="btn-def burger-menu__nav-list__btn">
+                    Тарифы
+  
+                    <span class="burger-arrow">
+                      <svg width="1.6rem" height="1.6rem" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M2 5L8 11L14 5" stroke="#5E5E65" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </span>
+                  </button>
+  
+                  <ul class="menu-list__dropdown">
+                    <li class="">
+                      <a href="" class="h3">
+                        Revizor cloud
+                      </a>
+                    </li>
+                    <li class="">
+                      <a href="" class="h3">
+                        Revizor server
+                      </a>
+                    </li>
+                    <li class="">
+                      <a href="" class="h3">
+                        Монтаж и техобслуживание
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+  
+                <li class="burger__nav-list__item"><a href="" class="btn-def">Оборудование</a></li>
+                <li class="burger__nav-list__item"><a href="" class="btn-def">О системе</a></li>
+                <li class="burger__nav-list__item"><a href="" class="btn-def">Статьи</a></li>
+                <li class="burger__nav-list__item"><a href="" class="btn-def">Контакты</a></li>
+              </ul>
+            </nav>
+          </div>
+
+          <a href="" class="btn-def btn-def__effect burger-menu__btn">
+            Стать клиентом
+          </a>
+        </div>
+      </header>
+  
+    <main class="page">
+      <!-- section-eleven -->
+
+      <section class="section-eleven">
+        <div class="_container__alt-2">
+          <hgroup class="section-eleven__head">
+            <h1 class="h1">
+              Тарифы <br>
+              на серверное решение
+            </h1>
+            <p class="text">
+              серверное решение Revizor server
+            </p>
+          </hgroup>
+        </div>
+      </section>
+
+      <!-- section-twelve -->
+
+      <section class="section-twelve">
+        <div class="_container__alt-2">
+          <div class="section-twelve__container">
+            <div class="container__block-one">
+              <p class="text_5">Наименование</p>
+              <p class="text_5">стоимость</p>
+            </div>
+
+            <p class="container-text text">
+              серверное решение
+            </p>
+  
+            <div class="container__block-two">              
+              <div>
+                <p class="text">
+                  Базовый функционал системы ReVizor. Включает lns (LoRa network server) для администрирования и управления сетью Lorawan 
+                </p>
+                
+                <p class="text">
+                  200 000 ₽
+                </p>
+              </div>
+
+              <div>
+                <p class="text">
+                  пакет расширения 1 000 точек учета
+                </p>
+                
+                <p class="text">
+                  25 000 ₽
+                </p>
+              </div>
+
+              <div>
+                <p class="text">
+                  Подписка на обновление и техническую поддержку (1 год)
+                </p>
+                
+                <p class="text text-fix">
+                  7% от стоимости лицензий Лицензиата на дату продления подписки 
+                </p>
+              </div>
+
+              <div>
+                <p class="text">
+                  Переоформление лицензий на другое лицо
+                </p>
+
+                <p class="text">
+                  7 000 ₽
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- section-thirteen -->
+
+      <section class="section-thirteen"> 
+        <div class="_container">
+          <div class="section-thirteen__core">
+            <h2 class="h1">
+              Бесплатные работы:
+            </h2>
+  
+            <div class="section-thirteen__container">
+              <p class="h3">
+                <span>
+                  <img src="src/img/check__white.svg" alt="">
+                </span>Брендирование интерфейса
+              </p>
+              <p class="h3">
+                <span>
+                  <img src="src/img/check__white.svg" alt="">
+                </span>Установка и настройка ПО ReVizor на Ваш сервер
+              </p>
+              <p class="h3">
+                <span>
+                  <img src="src/img/check__white.svg" alt="">
+                </span>
+              Перенос данных из облачной версии в серверную	
+              </p>
+              <p class="h3">
+                <span>
+                  <img src="src/img/check__white.svg" alt="">
+                </span>
+              В первый год подписка на обновление и техническую поддержку предоставляется бесплатно
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  
+    <footer>
+      <div class="footer-head">
+        <div class="footer-head__block">
+          <div class="footer-logo">
+            <img src="src/img/logo.svg" alt="">
+          </div>
+          <div class="manuals-block">
+            <a href="" class="header-text__3 link-def__effect">Руководство пользователя</a>
+            <a href="" class="header-text__3 link-def__effect">Руководство администратора</a>
+          </div>
+        </div>
+
+        <div class="footer-head__block-two">
+          <nav class="footer-nav">
+            <ul class="footet-nav__list">
+              <li class="footet-nav__list-item btn-def link-def__effect">
+                <a href="">Решения</a>
+              </li>
+              <li class="footet-nav__list-item btn-def link-def__effect">
+                <a href="">Тарифы</a>
+              </li>
+              <li class="footet-nav__list-item btn-def link-def__effect">
+                <a href="">О системе</a>
+              </li>
+              <li class="footet-nav__list-item btn-def link-def__effect">
+                <a href="">Оборудование</a>
+              </li>
+              <li class="footet-nav__list-item btn-def link-def__effect">
+                <a href="">О нас</a>
+              </li>
+              <li class="footet-nav__list-item btn-def link-def__effect">
+                <a href="">Статьи</a>
+              </li>
+              <li class="footet-nav__list-item btn-def link-def__effect">
+                <a href="">вопросы</a>
+              </li>
+              <li class="footet-nav__list-item btn-def link-def__effect">
+                <a href="">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="footer__number-tel">
+            <p>8 800 550 65 92</p>
+            <a href="tel: 8 800 550 65 92" class="link-def__effect">8 800 550 65 92</a>
+          </div>
+          <div class="manuals-block__mobile">
+            <a href="" class="header-text__3 link-def__effect">Руководство пользователя</a>
+            <a href="" class="header-text__3 link-def__effect">Руководство администратора</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-down">
+        <p class="footer-down__text header-text__3">
+          <span>© 2025</span>
+          <a href="">
+            Политика конфиденциальности
+          </a>
+        </p>
+
+        <div class="footer__it-company">
+          <div class="footer__it-company__img">
+            <img src="src/img/footer-logo 1.svg" alt="">
+          </div>
+          <p class="text">
+            RequestDesign
+          </p>
+        </div>
+      </div>
+
+    </footer>
+  </div>
+
+  <script src="src/script/header__dropdown__lists.js"></script>
+  <script src="src/script/burger-menu.js"></script>
+  
+</body>
+</html>
