@@ -1,19 +1,19 @@
 /* обнуление */
 
-@import url(src/style/_reset.css);
+@import url(/src/style/_reset.css);
 
 /* шрифты */
 
-@import url(src/style/fonts.css);
+@import url(/src/style/fonts.css);
 
 /* preloader */
 
-@import url(src/style/preloader.css);
+@import url(/src/style/preloader.css);
 
 /* шапка и подвал */
 
-@import url(src/style/header.css);
-@import url(src/style/footer.css);
+@import url(/src/style/header.css);
+@import url(/src/style/footer.css);
 
 /* all__section */
 
