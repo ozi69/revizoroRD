@@ -4,20 +4,20 @@
 
 /* шрифты */
 
-@import url(/style/fonts.css);
+@import url(style/fonts.css);
 
 /* preloader */
 
-@import url(/style/preloader.css);
+@import url(style/preloader.css);
 
 /* шапка и подвал */
 
-@import url(/style/header.css);
-@import url(/style/footer.css);
+@import url(style/header.css);
+@import url(style/footer.css);
 
 /* all__section */
 
-@import url(/style/all__section.css);
+@import url(style/all__section.css);
 
 /* переменные */
 
