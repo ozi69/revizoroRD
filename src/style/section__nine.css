@@ -157,19 +157,32 @@
     }
 
     .section-nine__down-box {
-      background: url(/src/img/img-11.png);
-      background-size: cover;
-
       height: 66.4rem;
       width: 90rem;
-      border-radius: 2rem;
       padding: 3rem;
+
+      position: relative;
       color: var(--white);
 
       display: flex;
       flex-direction: column;
-      justify-content: end;
-      gap: 21rem;
+      justify-content: space-between;
+
+      img {
+        position: absolute;
+        inset: 0;
+        z-index: 0;
+        border-radius: 2rem;
+      }
+
+      .section-nine__down-box__inc {
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        height: 100%;
+      }
 
       @media (max-width: 767px) {
         width: 34.5rem;

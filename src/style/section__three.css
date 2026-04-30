@@ -1,12 +1,24 @@
 .section-three {
   .section-three__container {
-    background: url(/src/img/img-8.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    border-radius: 2rem;
-
     padding: 3.2rem 3rem;
     color: var(--white);
+
+    position: relative;
+
+    img {
+      position: absolute;
+      inset: 0;
+      border-radius: 2rem;
+
+      
+      z-index: 0;
+    }
+
+    .section-three__container__box {
+      position: relative;
+
+      z-index: 2;
+    }
 
     @media (max-width: 767px) {
       padding: 3.2rem 1.6rem;
