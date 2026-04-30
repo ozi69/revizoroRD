@@ -17,40 +17,40 @@
 
 /* all__section */
 
-@import url("/section__one.css");
-@import url("/section__two.css");
-@import url("/section__three.css");
-@import url("/section__four.css");
-@import url("/section__five.css");
-@import url("/section__six.css");
-@import url("/section__seven.css");
-@import url("/section__nine.css");
-@import url("/section__ten.css");
-@import url("/section__eleven.css");
-@import url("/section__twelve.css");
-@import url("/section__thirteen.css");
-@import url("/section__fourteen.css");
-@import url("/section__fiveteen.css");
-@import url("/section__sixteen.css");
-@import url("/section__seventeen.css");
-@import url("/section__eighteen.css");
-@import url("/section__nineteen.css");
-@import url("/section__twenty.css");
-@import url("/section__twenty__one.css");
-@import url("/section__twenty__two.css");
-@import url("/section__twenty__three.css");
-@import url("/section__twenty__four.css");
-@import url("/section__twenty__five.css");
-@import url("/section__twenty__six.css");
-@import url("/section__twenty__seven.css");
-@import url("/section__twenty__eight.css");
-@import url("/section__twenty__nine.css");
-@import url("/section__thirty.css");
-@import url("/section__thirty__one.css");
-@import url("/section__thirty__two.css");
-@import url("/section__thirty__three.css");
-@import url("/section__error__404.css");
-@import url("/section__faq.css");
+@import url("./src/style/section__one.css");
+@import url("./src/style/section__two.css");
+@import url("./src/style/section__three.css");
+@import url("./src/style/section__four.css");
+@import url("./src/style/section__five.css");
+@import url("./src/style/section__six.css");
+@import url("./src/style/section__seven.css");
+@import url("./src/style/section__nine.css");
+@import url("./src/style/section__ten.css");
+@import url("./src/style/section__eleven.css");
+@import url("./src/style/section__twelve.css");
+@import url("./src/style/section__thirteen.css");
+@import url("./src/style/section__fourteen.css");
+@import url("./src/style/section__fiveteen.css");
+@import url("./src/style/section__sixteen.css");
+@import url("./src/style/section__seventeen.css");
+@import url("./src/style/section__eighteen.css");
+@import url("./src/style/section__nineteen.css");
+@import url("./src/style/section__twenty.css");
+@import url("./src/style/section__twenty__one.css");
+@import url("./src/style/section__twenty__two.css");
+@import url("./src/style/section__twenty__three.css");
+@import url("./src/style/section__twenty__four.css");
+@import url("./src/style/section__twenty__five.css");
+@import url("./src/style/section__twenty__six.css");
+@import url("./src/style/section__twenty__seven.css");
+@import url("./src/style/section__twenty__eight.css");
+@import url("./src/style/section__twenty__nine.css");
+@import url("./src/style/section__thirty.css");
+@import url("./src/style/section__thirty__one.css");
+@import url("./src/style/section__thirty__two.css");
+@import url("./src/style/section__thirty__three.css");
+@import url("./src/style/section__error__404.css");
+@import url("./src/style/section__faq.css");
 
 /* переменные */
 
